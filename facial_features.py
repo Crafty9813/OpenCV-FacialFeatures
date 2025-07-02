@@ -4,10 +4,10 @@ cap = cv2.VideoCapture(0)
 
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
-mouth_cascade = cv2.CascadeClassifier('haarcascade_mcs_mouth.xml')
-nose_cascade = cv2.CascadeClassifier('haarcascade_mcs_nose.xml')
-leftEar_cascade = cv2.CascadeClassifier('haarcascade_mcs_leftear.xml')
-rightEar_cascade = cv2.CascadeClassifier('haarcascade_mcs_rightear.xml')
+mouth_cascade = cv2.CascadeClassifier('features/haarcascade_mcs_mouth.xml')
+nose_cascade = cv2.CascadeClassifier('features/haarcascade_mcs_nose.xml')
+leftEar_cascade = cv2.CascadeClassifier('features/haarcascade_mcs_leftear.xml')
+rightEar_cascade = cv2.CascadeClassifier('features/haarcascade_mcs_rightear.xml')
 
 while True:
     ret, frame = cap.read()
